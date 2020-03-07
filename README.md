@@ -1,6 +1,6 @@
 # software-development 
 Andreen Anglin
 Armah Peter
-
-Syed Ali
+Asif Musa
+Syed
 Gurminder Kaur
