@@ -2,5 +2,5 @@
 Andreen Anglin
 Armah Peter
 Asif Musa
-Syed
+Syed Ali
 Gurminder Kaur
