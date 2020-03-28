@@ -11,8 +11,8 @@ public class BoxObjects {
         ups.width = 30;
         ups.cost = 40.45;
 
-
-        int upsArea = ups.calculateArea(10);
+        int upsHeight = 30;
+        int upsArea = ups.calculateArea(upsHeight);
 
         System.out.println("ups box total area is :  " +upsArea +" and the cost is : " + ups.cost);
 
@@ -23,6 +23,17 @@ public class BoxObjects {
         int fedexArea = fedex.calculateArea(20);
 
         System.out.println("Fedex box total area is : " + fedexArea);
+
+
+        Box usps = new Box();
+
+        usps.length = 35;
+        usps.width = 25;
+        usps.cost = 23.2;
+
+        int uspsBoxArea = usps.calculateArea(0);
+
+        System.out.println(usps.description + ", usps box area is : " + uspsBoxArea);
 
 
 

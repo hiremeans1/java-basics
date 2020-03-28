@@ -9,7 +9,7 @@ public class Employee {
 
     public Integer calculateTotalSalary(){
 
-        return salary + bonus;
+        return salary * bonus;
 
     }
 

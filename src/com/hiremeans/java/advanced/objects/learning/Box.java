@@ -9,6 +9,9 @@ public class Box {
 
 
     public int calculateArea(int height){
+        if(height == 0){
+            this.description = "Height was passed as 0";
+        }
         int area = length * width * height;
         return area;
     }
