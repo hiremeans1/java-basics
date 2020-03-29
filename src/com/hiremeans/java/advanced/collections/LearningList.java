@@ -1,5 +1,7 @@
 package com.hiremeans.java.advanced.collections;
 
+import com.hiremeans.java.advanced.objects.learning.User;
+
 import java.util.ArrayList;
 
 
@@ -14,6 +16,15 @@ public class LearningList {
         listOfCountryNames.add("India");
         listOfCountryNames.add("Brazil");
         listOfCountryNames.add("Kenya");
+
+        User user1 = new User();
+
+        user1.calculateSalary();
+
+
+
+
+
 
 
         System.out.println("Size of the list is : " + listOfCountryNames.size());
