@@ -16,7 +16,7 @@ public class User {
 
 
     public double calculateSalary(){
-        return salary;
+        return salary + 10000;
     }
 
 
