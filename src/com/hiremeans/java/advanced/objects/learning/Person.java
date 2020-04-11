@@ -5,18 +5,27 @@ public class Person {
     String name;
     Integer age;
 
-    Person(String name, Integer age) {
+    public Person(String name, Integer age) {
         this.name = name;
         this.age = age;
     }
 
-    Person(){
+    public Person(){
         // no args constructor
     }
 
 
 
-    String caleAge(){
-        return "not available";
+    public Integer caleAge(){
+        return age;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getAge() {
+        return age;
     }
 }

@@ -6,18 +6,18 @@ public class UserObjects
     public static void main(String[] args) {
 
 
-        User user1 = new User();
-
-        user1.setUserId(123);
-        user1.setAddress("1234 some street name, D.C");
-        user1.setSalary(20000);
-        user1.setUserName("Andrew");
+        User user1 = new User("John",1, "123 xyz street",120);
 
 
-        System.out.println(user1.getUserId());
-        System.out.println(user1.getAddress());
-        System.out.println(user1.getSalary());
-        System.out.println(user1.getUserName());
+
+        User user2 = new User("Alex",2,"1245 xyz", 110);
+
+
+
+
+        System.out.println(user1.getUserName() + " id is : "+user1.getUserId() + ", address is : " + user1.getAddress() +", salary is : "+user1.getSalary() );
+
+
 
 
 
