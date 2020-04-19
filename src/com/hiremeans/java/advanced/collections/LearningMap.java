@@ -2,6 +2,7 @@ package com.hiremeans.java.advanced.collections;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class LearningMap {
 
@@ -31,6 +32,31 @@ public class LearningMap {
 
         System.out.println(countryMapWithPopulation.get("Italy"));
         System.out.println(countryMapWithPopulation.get("Canada"));
+
+
+
+        Map<String,Integer> mapOfPersons = new HashMap<>();
+
+        mapOfPersons.put("John",29);
+        mapOfPersons.put("Alex", 35);
+        mapOfPersons.put("Linda",45);
+        mapOfPersons.put("John", 45);
+
+        for(Map.Entry<String,Integer> mapofEntries : mapOfPersons.entrySet()){
+            System.out.println(mapofEntries.getKey()+ " has value : "+mapofEntries.getValue());
+            // System.out.println(mapofEntries.getKey());
+
+        }
+        mapOfPersons.remove("John");
+
+        System.out.println("---------- after removing key from the map -------------");
+
+        for(Map.Entry<String,Integer> mapofEntries : mapOfPersons.entrySet()){
+            System.out.println(mapofEntries.getKey()+ " has value : "+mapofEntries.getValue());
+            // System.out.println(mapofEntries.getKey());
+
+        }
+
 
 
 

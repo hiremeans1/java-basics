@@ -27,10 +27,20 @@ public class LearningSet {
         setOfCountryNames.add("France");
         setOfCountryNames.add("Japan");
         setOfCountryNames.add("Brazil");
-        setOfCountryNames.add("Canada");
+        setOfCountryNames.add("canada");
         setOfCountryNames.add("India");
 
 
+
+        for (String countryName : setOfCountryNames) {
+
+            System.out.println(countryName);
+
+        }
+
+        setOfCountryNames.remove("canada");
+
+        System.out.println(" -------after removing value from the set ------");
 
         for (String countryName : setOfCountryNames) {
 

@@ -4,6 +4,7 @@ import com.hiremeans.java.advanced.objects.learning.Person;
 import com.hiremeans.java.advanced.objects.learning.User;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -59,10 +60,28 @@ public class LearningList {
 
         System.out.println("----------------- Using for-each loop iterating the list -----------------------");
 
-        for(String anything : listOfCountryNames ){
+        int index = 0;
 
-            System.out.println(anything.toUpperCase() + " length of this name is : " + anything.length());
+        for(String country : listOfCountryNames ){
 
+            System.out.println(country.toUpperCase() + " length of this name is : " + country.length());
+            if(country.equals("Italy")){
+                index = listOfCountryNames.indexOf(country);
+            }
+        }
+
+        listOfCountryNames.remove(index);
+
+        List<String> listOfObjectsToRemove = new ArrayList<>();
+        listOfObjectsToRemove.add("Canada");
+        listOfObjectsToRemove.add("Japan");
+
+        listOfCountryNames.removeAll(listOfObjectsToRemove);
+
+
+        System.out.println("--------- after removing value ('Italy') from the list -----------------");
+        for (String countryName : listOfCountryNames) {
+            System.out.println(countryName);
         }
 
 
@@ -88,6 +107,7 @@ public class LearningList {
 
         personList.add(person1);
         personList.add(new Person("Linda",20));
+
 
         for (Person person : personList) {
 
