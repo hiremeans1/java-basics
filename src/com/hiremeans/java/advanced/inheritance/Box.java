@@ -23,7 +23,8 @@ public class Box {
         System.out.println("volume = " + (length * width * height));
     }
 
-    public int calculateAreaOfCircle(int radius){
+    public double calculateAreaOfCircle(int radius){
+
         return 22/7 * radius * radius;
     }
 

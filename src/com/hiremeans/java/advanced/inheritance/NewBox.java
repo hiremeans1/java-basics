@@ -1,7 +1,9 @@
 package com.hiremeans.java.advanced.inheritance;
 
 
-public class NewBox extends Box{
+import com.hiremeans.java.advanced.interfaces.Excel;
+
+public class NewBox extends Box {
 
     String name;
 
@@ -14,7 +16,7 @@ public class NewBox extends Box{
        this.name = name;
     }
 
-
+    @Override
     public void calculateArea(int length, int width){
         System.out.println("Name of the box is : " + name);
         calculateVolume(length,width,height * 10);
